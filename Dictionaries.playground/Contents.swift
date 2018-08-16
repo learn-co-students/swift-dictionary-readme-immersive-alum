@@ -1,21 +1,19 @@
 var favoriteWords = [
-    "rigmarole": "a lengthy and complicated procedure",
-    "gobbledygook": "language that is meaningless; nonsense",
-    "lollygag": "spend time aimlessly",
-    "wabbit": "weary, exhausted",
+    "rigamarole": "a long and complicated process",
+    "guacamole": "better than hummus",
+    "nachos": "better with guacamole"
 ]
 
-var numberWords = [1: "one"]
-
-var definition = favoriteWords["rigmarole"]
-
-var nonexistentDefinition = favoriteWords["strategery"]
+var numberWords = [1 : "One"]
+var definition = favoriteWords["rigamarole"]
+    var nonexistentDefinition = favoriteWords["strategery"]
 
 if let definition = definition {
     print("The definition of 'rigmarole' is '\(definition)'")
 } else {
     print("'rigmarole' isn't a word!")
 }
+// prints "The definition of 'rigmarole' is 'a lengthy and complicated procedure'
 
 if let definition = nonexistentDefinition {
     print("The definition of 'strategery' is '\(definition)'")
@@ -24,7 +22,9 @@ if let definition = nonexistentDefinition {
 }
 
 favoriteWords["strategery"] = "strategy"
-definition = favoriteWords["strategery"]
 
 favoriteWords["strategery"] = nil
+
 print(favoriteWords)
+
+
